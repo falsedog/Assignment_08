@@ -109,8 +109,10 @@ class FileIO:  # Because these are all static it's not really that vital that th
             file_choice = input().lower().strip()
             if file_choice == 'c':
                 FileIO.file_create()
+                break
             elif file_choice == 'f':
                 FileIO.file_name()
+                break
             elif file_choice == 'x':  # Sneaky that exiting is possible before it's explained, but it's worth it imo
                 IO.exit()
             else:
